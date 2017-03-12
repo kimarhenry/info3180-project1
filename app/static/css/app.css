@@ -1,0 +1,9 @@
+body {
+    padding-top: 50px;
+}
+#name{width: 100%; background-color: rgb(245,245,245); border-bottom-style: solid; border-color: rgb(221,221,221);padding-left: 0.5cm;}
+#pdetails{width: 100%;padding-left: 0.5cm; border-top-style: solid;border-top-width: thin; border-bottom-style: solid;border-bottom-width: thin;border-color: rgb(221,221,221)}
+#dimg{float: left; width: 16%; border-style: solid; border-color: rgb(221,221,221); border-radius: 5px;padding-left: 0.1cm;padding-top: 0.1cm; padding-bottom: 0.1cm; padding-right: 0.1cm;}
+#dinfo{ float: right;width: 40%; border-style: solid;  border-color: rgb(221,221,221); border-radius: 5px;}
+#date{padding-left: 0.5cm;}
+#desc{padding-left: 0.5cm;}
