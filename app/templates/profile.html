@@ -4,30 +4,30 @@
   <form action="{{ url_for('profile') }}" method="POST" enctype="multipart/form-data">
     <h2>User Information Form</h2>
     <div>
-      <label for="fname">Firstname:</label>
+      <label for="fname">Firstname:</label><em class='red'>(Required)</em><br>
       <input type="text" id="fname" name="fname"  />
     </div>
     <div>
-      <label for="lname">Lastname:</label>
+      <label for="lname">Lastname:</label><em class='red'>(Required)</em><br>
       <input type="text" id="lname" name="lname"  />
     </div>
     <div>
-      <label for="age">Age:</label>
+      <label for="age">Age:</label><em class='red'>(Required)</em><br>
       <input type="number" id="age" name="age" />
     </div>
      <div>
-      <label for="gender">Gender:</label>
+      <label for="gender">Gender:</label><em class='red'>(Required)</em><br>
       <select id ='gender' name='gender'>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
       </select>
     </div>
     <div>
-      <label for="bio">Biography: </label>
+      <label for="bio">Biography: </label><em class='red'>(Required)</em><br>
       <textarea id="bio" name="bio"></textarea>
     </div>
     <div>
-      <input type="file" name="profile_image"/>
+      <input type="file" name="profile_image"/><em class='red'>(Required)</em><br>
     </div>
     <div>
       <button type="submit">Submit</button>

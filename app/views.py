@@ -57,7 +57,7 @@ def profile():
     
 @app.route('/profiles',methods=['GET','POST'])
 def profiles():
-    """Render the website's profiles page."""
+    """Render the website's profiles page, to file in form."""
     users =[]
     query='SELECT first_name,id FROM user_profile;'
     entries=db.session.execute(query)
@@ -69,9 +69,9 @@ def profiles():
     return response
 
 @app.route('/profile/<userid>',methods=['GET','POST'])
-def profile_id(userid):
-    """Render the website's unique profile page."""
-    query="SELECT id,first_name,imagename,gender,age,profile_creation FROM user_profile WHERE id={0};".format(userid)
+def profile_userid(userid):
+    """Render the website's unique profile page display list of profile in json."""
+    query="SELECT id,first_name,last_name,imagename,gender,age,bio,profile_creation FROM user_profile WHERE id={0};".format(userid)
     profile_info=db.session.execute(query)
     for user in profile_info: 
         usid,username,profile_pic,gender,age,created_on =user[0],user[1],user[2],user[3],user[4],user[5]
